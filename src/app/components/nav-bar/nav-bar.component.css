@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #D85901;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #5f20f1 100%);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  .nav-list a {
+    display:block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-family:calibri;
+  }
+  
+  .login {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav-list a:hover {
+    background: #3a3d40;
+    transition: background-color 1000ms linear;
+    
+  }
