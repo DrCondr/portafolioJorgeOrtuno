@@ -1,0 +1,30 @@
+.row {
+    padding: 5%;
+    border-top: 4px solid #0279f0;
+    border-bottom: 2px solid black ;
+}
+
+div {
+    background-color: #3a3d40;
+    
+}
+ 
+h2 {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 25%;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+img{
+    top: 5%;
+    border-radius: 50%;
+    border-style: solid;
+    
+}
+
