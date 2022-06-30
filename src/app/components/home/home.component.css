@@ -10,14 +10,20 @@
   }
   
   .welcome-section >h1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
     color: #F4EEEA;
     font-family: lobster;
   }
   
   .welcome-section > p {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 200;
     font-style:italic;
     color: #0279f0
+  }
+
+  .logoar {
+    width: 250px;
+    color: #0279f0;
+    
   }
