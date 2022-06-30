@@ -1,8 +1,4 @@
 .experiencia_laboral {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
     width: 100%;
     height: 100vh;
     background-color: #000;
@@ -13,11 +9,14 @@
     font-size: 4.5rem;
     color: #F4EEEA;
     font-family: lobster;
+    text-align: center;
+    padding-top: 5%;
   }
   
-  .experiencia_laboral > p {
+   h2 {
     font-size: 2rem;
     font-weight: 200;
     font-style:italic;
-    color:#D85901;
+    color:white;
+    padding-left: 5%;
   }

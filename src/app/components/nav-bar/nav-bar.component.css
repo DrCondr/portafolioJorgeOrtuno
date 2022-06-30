@@ -5,14 +5,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 7.5%;
     background: #D85901;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #5f20f1 100%);
-    z-index: 10;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #0279f0 100%);
+    z-index: 5;
   }
   
   .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   
   .nav-list a {
@@ -20,15 +21,17 @@
     font-size: 1.5rem;
     padding: 1rem;
     font-family:calibri;
+    color:white;
   }
   
-  .login {
-    color: black;
+  #logbtn {
+    color: rgb(186, 236, 3);
     font-weight: bold;
+    text-decoration: underline;
   }
   
   .nav-list a:hover {
-    background: #3a3d40;
-    transition: background-color 1000ms linear;
+    background: #000000;
+    transition: background-color 500ms linear;
     
   }
