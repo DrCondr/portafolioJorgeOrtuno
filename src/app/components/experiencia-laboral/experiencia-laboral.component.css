@@ -1,11 +1,11 @@
-.experiencia_laboral {
-    width: 100%;
+ #experiencia {
+  width: 100%;
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(180deg, #0279f0 0%, #6901d1 100%);
   }
   
-  .experiencia_laboral >h1 {
+  h1 {
     font-size: 4.5rem;
     color: #F4EEEA;
     font-family: lobster;
@@ -15,8 +15,23 @@
   
    h2 {
     font-size: 2rem;
-    font-weight: 200;
-    font-style:italic;
+    font-style:bold;
     color:white;
     padding-left: 5%;
+    text-align: center;
+  }
+
+  h3 {
+    padding-left: 5%;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  li {
+    border-bottom: 2px solid black;
+    padding: 1%;
   }
