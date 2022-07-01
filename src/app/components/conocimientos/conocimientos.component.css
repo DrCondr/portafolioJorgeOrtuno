@@ -38,7 +38,11 @@
     padding: 1%;
   }
 
-  div > #circulos{
+  #div_inicio {
+    border-bottom: 4px solid black;
+  }
+
+  div > .circulos{
     padding: 3%;
   }
 
