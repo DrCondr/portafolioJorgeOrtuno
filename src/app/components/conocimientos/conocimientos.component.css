@@ -1,12 +1,11 @@
- #experiencia {
+#experiencia {
     background-color: #000;
-    background-image: linear-gradient(180deg, #0279f0 0%, #6901d1 100%);
+    background-image: linear-gradient(180deg, #6901d1 0%, #0279f0 100%);
   }
 
   div {
     padding: 1%;
   }
-
   
   h1 {
     font-size: 4.5rem;
@@ -37,4 +36,12 @@
   li {
     border-bottom: 2px solid black;
     padding: 1%;
+  }
+
+  div > #circulos{
+    padding: 3%;
+  }
+
+  div > #h2_circulos{
+    padding-bottom: 3%;
   }

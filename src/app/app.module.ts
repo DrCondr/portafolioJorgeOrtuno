@@ -10,6 +10,9 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
+import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
+
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,29 @@ import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.comp
     ProyectosComponent,
     ContactoComponent,
     FooterComponent,
-    AcercaDeMiComponent
+    AcercaDeMiComponent,
+    ConocimientosComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgCircleProgressModule.forRoot({
+      "radius": 60,
+      "space": -10,
+      "outerStrokeGradient": true,
+      "outerStrokeWidth": 10,
+      "outerStrokeColor": "#4882c2",
+      "outerStrokeGradientStopColor": "orange",
+      "innerStrokeColor": "#e7e8ea",
+      "innerStrokeWidth": 10,
+      "title": "UI",
+      "animateTitle": false,
+      "animationDuration": 1000,
+      "showUnits": false,
+      "showBackground": false,
+      "clockwise": false,
+      "startFromZero": false,
+      "lazy": true})
   ],
   providers: [],
   bootstrap: [AppComponent]
