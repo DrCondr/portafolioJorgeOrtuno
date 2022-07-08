@@ -38,11 +38,7 @@
     padding: 1%;
   }
 
-  #div_inicio {
-    border-bottom: 4px solid black;
-  }
-
-  div > .circulos{
+  div > #circulos{
     padding: 3%;
     display: flex;
     flex-direction: row;
