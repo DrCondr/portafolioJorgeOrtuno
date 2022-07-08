@@ -8,27 +8,11 @@
     font-family: calibri;
     color: white;
   }
-
-  @media (max-width: 30.625em) {
-    .projects-section {
-      padding: 6rem 1rem;
-    }
-  
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  }
   
   .projects-section-header {
     max-width: 800px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid #f2f4f5;
-  }
-  
-  @media (max-width: 28.75em) {
-    .projects-section-header {
-      font-size: 4rem;
-    }
+    border-bottom: 0.2rem solid #3a3d40;
   }
   
   .projects-grid {

@@ -10,16 +10,6 @@
     background-image: linear-gradient(62deg, #3a3d40 0%, #0279f0 100%);
     z-index: 5;
   }
-
-  @media (max-width: 28.75em) {
-    .nav {
-      justify-content: center;
-    }
-  
-    .nav-list {
-      margin: 0 1rem;
-    }
-  }
   
   .nav-list {
     display: flex;
@@ -37,6 +27,7 @@
   #logbtn {
     color: rgb(186, 236, 3);
     font-weight: bold;
+    text-decoration: underline;
   }
   
   .nav-list a:hover {
