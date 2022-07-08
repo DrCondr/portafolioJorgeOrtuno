@@ -8,10 +8,25 @@
   *::after {
     box-sizing: inherit;
   }
+
   
+@media (max-width: 75em) {
   html {
-    box-sizing: border-box;
+    font-size: 60%;
   }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
   
   a {
     text-decoration:none;

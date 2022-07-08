@@ -13,6 +13,7 @@ import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.comp
 import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    HttpClientModule,
     NgCircleProgressModule.forRoot({
       "radius": 60,
       "space": -10,
