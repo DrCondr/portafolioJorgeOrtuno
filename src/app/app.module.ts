@@ -14,6 +14,9 @@ import { ConocimientosComponent } from './components/conocimientos/conocimientos
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { LoginComponent } from './components/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ContactoComponent,
     FooterComponent,
     AcercaDeMiComponent,
-    ConocimientosComponent
+    ConocimientosComponent,
+    PrincipalComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       "showBackground": false,
       "clockwise": false,
       "startFromZero": false,
-      "lazy": true})
+      "lazy": true}),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
