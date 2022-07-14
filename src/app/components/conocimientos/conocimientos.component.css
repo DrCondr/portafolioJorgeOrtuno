@@ -40,8 +40,17 @@
 
   div > #circulos{
     padding: 3%;
+    display: flex;
+    border-bottom: 2px solid black;
+    
   }
 
-  div > #h2_circulos{
+  div > .h2-circulos{
     padding-bottom: 3%;
+  }
+
+  @media (max-width: 61.25em) {
+    #circulos {
+      flex-direction: column;
+    }
   }

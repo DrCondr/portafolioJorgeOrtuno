@@ -10,6 +10,12 @@
     background-image: linear-gradient(62deg, #3a3d40 0%, #0279f0 100%);
     z-index: 5;
   }
+
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  }
   
   .nav-list {
     display: flex;
