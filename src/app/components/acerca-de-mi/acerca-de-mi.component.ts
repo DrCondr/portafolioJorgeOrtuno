@@ -16,4 +16,13 @@ export class AcercaDeMiComponent implements OnInit {
     this.personaService.getPersona().subscribe(data =>{this.persona = data})
   }
 
+
+  //Borrar Persona prueba
+  
+  /*deletePersona(id:any): void {
+    this.personaService.deletePersona(id).subscribe(data=>{})
+  }*/
+
+
+
 }

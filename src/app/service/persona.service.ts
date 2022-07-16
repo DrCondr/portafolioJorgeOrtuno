@@ -14,4 +14,10 @@ export class PersonaService {
   public getPersona(): Observable<persona>{
     return this.http.get<persona>(this.URL+'traer/perfil');
   }
+
+  //Metodo para borrar personas prueba
+  
+  /*public deletePersona(id:Number): Observable<Number>{
+    return this.http.delete<Number>(this.URL+'borrar/' +id ); 
+  }*/
 }
