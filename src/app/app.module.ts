@@ -19,6 +19,8 @@ import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { interceptorProvider } from './service/interceptor-service';
     AcercaDeMiComponent,
     ConocimientosComponent,
     PrincipalComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
