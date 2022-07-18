@@ -7,7 +7,7 @@
       </li>
       <li> <a href="#contacto"> Contacto </a> 
       </li>
-      <li> <a class="login" id="logbtn" href="/login" *ngIf="!isLogged">Login</a></li> 
+      <li> <a class="login" id="logbtn" href="/login" *ngIf="!isLogged"><span style="color: black;"><</span>Ingresar<span style="color: black;">/></span></a></li> 
       <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
     </ul>
   </nav>

@@ -19,11 +19,21 @@
     font-size: 3rem;
     font-weight: 200;
     font-style:italic;
-    color: #0279f0
+    color: #FF6363;
   }
 
   .logoar {
     width: 250px;
-    color: #0279f0;
+    color: #FF6363;
     
+  }
+
+  .bi {
+    font-size: 5em;
+    color:#FF6363 ;
+  }
+
+  .bi:hover {
+    transition: color 500ms linear;
+    color: #000;
   }

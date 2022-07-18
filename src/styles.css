@@ -1,17 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
+html,
+body,
+main {
+  height: 100%;
+}
 
   @media (max-width: 75em) {
     html {
@@ -31,11 +22,6 @@
     html {
       font-size: 55%;
     }
-  }
-  
-  a {
-    text-decoration:none;
-    color: #F4EEEA;
   }
   
   ul{

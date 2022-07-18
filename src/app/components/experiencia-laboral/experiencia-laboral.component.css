@@ -1,6 +1,5 @@
- #experiencia {
-    background-color: #000;
-    background-image: linear-gradient(180deg, #0279f0 0%, #6901d1 100%);
+  #experiencia {
+    background-color: #ff6363;
   }
 
   div {
@@ -10,7 +9,7 @@
   
   h1 {
     font-size: 4.5rem;
-    color: #F4EEEA;
+    color: white;
     font-family: lobster;
     text-align: center;
     padding-top: 5%;
@@ -19,7 +18,6 @@
    h2 {
     font-size: 2rem;
     font-style:bold;
-    color:white;
     padding-left: 5%;
     text-align: center;
   }
@@ -37,4 +35,8 @@
   li {
     border-bottom: 2px solid black;
     padding: 1%;
+  }
+
+  #btnnew {
+    align-content: center;
   }

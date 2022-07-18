@@ -1,7 +1,8 @@
 .row {
     padding: 5%;
-    border-top: 4px solid #0279f0;
-    border-bottom: 2px solid black ;
+    border-top: 4px solid #FF6363;
+    border-bottom: 4px solid #FF6363 ;
+    
 }
 
 div {

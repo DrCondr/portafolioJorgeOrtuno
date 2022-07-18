@@ -5,17 +5,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 7.5%;
+    height: 7.4%;
     background: #D85901;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #0279f0 100%);
+    background-image: linear-gradient(62deg, #3a3d40 0%, #FF6363 100%);
     z-index: 5;
   }
 
-  @media (max-width: 28.75em) {
-    .nav {
-      justify-content: center;
-    }
-  }
   
   .nav-list {
     display: flex;
@@ -27,17 +22,20 @@
     font-size: 1.5rem;
     padding: 1rem;
     font-family:calibri;
-    color:white;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
   }
   
   #logbtn {
-    color: rgb(186, 236, 3);
+    color: #f4f8fa;
     font-weight: bold;
     text-decoration: underline;
   }
   
   .nav-list a:hover {
-    background: #000000;
-    transition: background-color 500ms linear;
-    
+    background: #1f1e1e;
+    transition: background-color 1000ms ease-in;
+    color: #FF6363;
   }
+
+  
