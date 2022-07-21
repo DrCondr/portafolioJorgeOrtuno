@@ -1,13 +1,19 @@
-<nav id="navbar" class="nav"> 
-    <ul class="nav-list">
-      <li> <a href="#welcome-section"> Inicio</a>
-      </li>
-      <li> <a href="#experiencia"> Experiencia</a></li>
-      <li> <a href="#projects"> Trabajos </a> 
-      </li>
-      <li> <a href="#contacto"> Contacto </a> 
-      </li>
-      <li> <a class="login" id="logbtn" href="/login" *ngIf="!isLogged"><span style="color: black;"><</span>Ingresar<span style="color: black;">/></span></a></li> 
-      <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesion</button>
-    </ul>
-  </nav>
+<nav id="navbar" class="nav">
+  <ul class="nav-list">
+    <li><a href="#welcome-section"> Inicio</a></li>
+    <li><a href="#experiencia"> Experiencia</a></li>
+    <li><a href="#projects"> Proyectos </a></li>
+    <li><a href="#contacto"> Contacto </a></li>
+    <li>
+      <a class="login" id="logbtn" href="/login" *ngIf="!isLogged">Ingresar</a>
+    </li>
+    <button
+      type="button"
+      class="btn btn-outline-light"
+      (click)="onLogOut()"
+      *ngIf="isLogged"
+    >
+      Cerrar sesion
+    </button>
+  </ul>
+</nav>
