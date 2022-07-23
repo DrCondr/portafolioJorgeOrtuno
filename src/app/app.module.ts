@@ -21,6 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia-laboral/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia.component';
+import { NewConocComponent } from './components/conocimientos/new-conoc.component';
+import { EditConocimientoComponent } from './components/conocimientos/edit-conocimiento.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { EditExperienciaComponent } from './components/experiencia-laboral/edit-
     PrincipalComponent,
     LoginComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NewConocComponent,
+    EditConocimientoComponent
   ],
   imports: [
     BrowserModule,

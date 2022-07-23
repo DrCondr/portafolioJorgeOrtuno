@@ -9,6 +9,7 @@
     font-size: 40px;
     font-family: calibri;
     color: #ff6363;
+    text-decoration: none;
   }
   
   .projects-section-header {
@@ -20,7 +21,7 @@
   .projects-grid {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 6rem;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -32,17 +33,20 @@
     background: #3a3d40;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
+    border: 10px black;
   }
   
   
   .project-title {
     font-size: 2rem;
     padding: 1rem 0.5rem;
-    font-family: calibri;
+    font-family: lobster;
+    text-decoration: none;
+    color: #eee ;
   }
   
   .project:hover {
-    background: #181719;
+    background: #ff6363;
     transition: background-color 400ms linear;
   }
 
@@ -50,4 +54,8 @@
     display: block;
     width: 100%;
     height: 100%;
+  }
+
+  a {
+    text-decoration: none;
   }

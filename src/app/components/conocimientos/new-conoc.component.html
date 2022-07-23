@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreateC()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="tituloC">Titulo</label>
+                    <input type="text" class="form-control" id="tituloC" name="tituloC" [(ngModel)]="tituloC" required>
+                </div>
+                <div class="form-group">
+                    <label for="centroC">Emisor del Titulo</label>
+                    <input type="text" class="form-control" id="centroC" name="centroC" [(ngModel)]="centroC" required>
+                </div>
+                <div class="form-group">
+                    <label for="anios">Años</label>
+                    <input type="text" class="form-control" id="anios" name="anios" [(ngModel)]="anios" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar conocimiento
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

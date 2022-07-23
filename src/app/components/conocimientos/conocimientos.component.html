@@ -1,138 +1,159 @@
 <section id="experiencia">
-    <h1>Conocimientos</h1>
+  <h1>Conocimientos</h1>
+  <div class="botones">
+    <button
+      type="button"
+      class="btn btn-outline-danger"
+      routerLink="/nuevoconoc"
+      *ngIf="isLogged"
+    >
+    <i class="bi bi-plus-square"></i>
+      Nuevo conocimiento
+    </button>
+  </div>
+  <div>
     <div>
       <ul>
-        <li>
-          <h2>Universidad</h2>
-          <h3>2017-2020</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente, in quos architecto quaerat molestiae quod iusto eos totam. Corporis velit magnam impedit modi minima ab fugiat nobis repudiandae! Debitis.</p>
-        </li>
-        <li>
-          <h2>Conocimiento 2</h2>
-          <h3> 2020-2021</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eum consequatur laboriosam sed vero ratione veritatis, magnam expedita neque dignissimos vel doloremque officia similique tempora quia voluptatum consectetur hic alias!</p>
-        </li>
-        <li>
-          <h2>Conocimiento 3</h2>
-          <h3>2021-2022</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laborum maiores debitis esse quam, optio laboriosam quas vero eligendi voluptatibus nam enim perferendis corporis cum quaerat illo dolorum commodi quo!</p>
+        <li *ngFor="let Conocimientos of conoc">
+          <h2>{{ Conocimientos.tituloC }}</h2>
+          <h2>{{ Conocimientos.centroC }}</h2>
+          <h3>{{ Conocimientos.anios }}</h3>
+          <div class="botones">
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-light"
+              routerLink="/editconoc/{{ Conocimientos.id }}"
+            >
+              <i class="bi bi-pencil-square"></i>Editar
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button
+              class="btn btn-danger"
+              (click)="deleteC(Conocimientos.id)"
+            >
+              <i class="bi bi-x-square-fill"></i>Borrar
+            </button>
+          </td>
+        </div>
         </li>
       </ul>
-  
+    </div>
+
     <div id="circulos">
       <div class="hardsk">
-      <h2 class="h2-circulos"> Hard Skills</h2>
-      <circle-progress
-  [percent]="90"
-  [radius]="60"
-  [outerStrokeWidth]="16"
-  [innerStrokeWidth]="8"
-  [outerStrokeColor]="'red'"
-  [innerStrokeColor]="'white'"
-  [animation]="true"
-  [animationDuration]="300"
-  [showSubtitle]="false"
-  [title]="'HTML'"
-  [showInnerStroke]="false"
-  [titleColor]="'orange'"
-  [titleFontSize]="'20'"
-></circle-progress>
-<circle-progress
-[percent]="80"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'red'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'CSS'"
-[showInnerStroke]="false"
-[titleColor]="'orange'"
-[titleFontSize]="'20'"
-></circle-progress>
-<circle-progress
-[percent]="70"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'red'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'JS'"
-[showInnerStroke]="false"
-[titleColor]="'orange'"
-[titleFontSize]="'20'"
-></circle-progress>
-<circle-progress
-[percent]="60"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'red'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'ANGULAR'"
-[showInnerStroke]="false"
-[titleColor]="'orange'"
-[titleFontSize]="'20'"
-></circle-progress>
+        <h2 class="h2-circulos">Hard Skills</h2>
+        <circle-progress
+          [percent]="90"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'red'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'HTML'"
+          [showInnerStroke]="false"
+          [titleColor]="'orange'"
+          [titleFontSize]="'20'"
+        ></circle-progress>
+        <circle-progress
+          [percent]="80"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'red'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'CSS'"
+          [showInnerStroke]="false"
+          [titleColor]="'orange'"
+          [titleFontSize]="'20'"
+        ></circle-progress>
+        <circle-progress
+          [percent]="70"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'red'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'JS'"
+          [showInnerStroke]="false"
+          [titleColor]="'orange'"
+          [titleFontSize]="'20'"
+        ></circle-progress>
+        <circle-progress
+          [percent]="60"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'red'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'ANGULAR'"
+          [showInnerStroke]="false"
+          [titleColor]="'orange'"
+          [titleFontSize]="'20'"
+        ></circle-progress>
       </div>
-<div>
-  <h2 class="h2-circulos">Soft Skills</h2>
-  <circle-progress
-[percent]="85"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'lightgreen'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'Compañerismo'"
-[showInnerStroke]="false"
-[titleColor]="'lightgreen'"
-[titleFontSize]="'15'"
-></circle-progress>
-<circle-progress
-[percent]="60"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'lightgreen'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'Ingles'"
-[showInnerStroke]="false"
-[titleColor]="'lightgreen'"
-[titleFontSize]="'20'"
-></circle-progress>
-<circle-progress
-[percent]="100"
-[radius]="60"
-[outerStrokeWidth]="16"
-[innerStrokeWidth]="8"
-[outerStrokeColor]="'lightgreen'"
-[innerStrokeColor]="'white'"
-[animation]="true"
-[animationDuration]="300"
-[showSubtitle]="false"
-[title]="'Sociabilidad'"
-[showInnerStroke]="false"
-[titleColor]="'lightgreen'"
-[titleFontSize]="'15'"
-></circle-progress>
-</div>
+      <div>
+        <h2 class="h2-circulos">Soft Skills</h2>
+        <circle-progress
+          [percent]="85"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'lightgreen'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'Compañerismo'"
+          [showInnerStroke]="false"
+          [titleColor]="'lightgreen'"
+          [titleFontSize]="'15'"
+        ></circle-progress>
+        <circle-progress
+          [percent]="60"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'lightgreen'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'Ingles'"
+          [showInnerStroke]="false"
+          [titleColor]="'lightgreen'"
+          [titleFontSize]="'20'"
+        ></circle-progress>
+        <circle-progress
+          [percent]="100"
+          [radius]="60"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'lightgreen'"
+          [innerStrokeColor]="'white'"
+          [animation]="true"
+          [animationDuration]="300"
+          [showSubtitle]="false"
+          [title]="'Sociabilidad'"
+          [showInnerStroke]="false"
+          [titleColor]="'lightgreen'"
+          [titleFontSize]="'15'"
+        ></circle-progress>
+        <p class="otros">Trabajo en equipo </p>
+      </div>
     </div>
-    <div>
-    </div>
+    <div></div>
   </div>
-  </section>
+</section>
