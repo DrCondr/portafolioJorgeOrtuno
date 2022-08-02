@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -11,7 +10,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
 import { AcercaDeMiComponent } from './components/acerca-de-mi/acerca-de-mi.component';
 import { ConocimientosComponent } from './components/conocimientos/conocimientos.component';
-
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { PrincipalComponent } from './components/principal/principal.component';
@@ -23,7 +21,11 @@ import { NewExperienciaComponent } from './components/experiencia-laboral/new-ex
 import { EditExperienciaComponent } from './components/experiencia-laboral/edit-experiencia.component';
 import { NewConocComponent } from './components/conocimientos/new-conoc.component';
 import { EditConocimientoComponent } from './components/conocimientos/edit-conocimiento.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule} from '@angular/material/expansion';
+import { SkillsComponent } from './components/skills/skills.component';
+import { NewskillsComponent } from './components/skills/newskills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,10 @@ import { EditConocimientoComponent } from './components/conocimientos/edit-conoc
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewConocComponent,
-    EditConocimientoComponent
+    EditConocimientoComponent,
+    SkillsComponent,
+    NewskillsComponent,
+    EditSkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,9 @@ import { EditConocimientoComponent } from './components/conocimientos/edit-conoc
       "clockwise": false,
       "startFromZero": false,
       "lazy": true}),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [
     interceptorProvider

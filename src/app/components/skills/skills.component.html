@@ -1,0 +1,41 @@
+<section id="certificados">
+    <h1 class="col-lg-12">Certificados</h1>
+    <div id="btnnew" class="col-lg-12">
+      <button
+         id="btnnew"
+        type="button"
+        class="btn btn-light"
+        routerLink="/nuevocert"
+        *ngIf="isLogged"
+      >
+      <i class="bi bi-plus-square"> </i>
+         Agregar Certificado
+      </button>
+    </div>
+    <div class="container">
+      <div class="grid">
+        
+          <div class="expind" *ngFor="let Skills of skills">
+            <h2>{{ Skills.nombreS }}</h2>
+            <h3>{{ Skills.descripcionS }}</h3>
+            <div class="botonese">
+            <td *ngIf="isLogged">
+              <button
+                class="btn btn-light"
+                routerLink="/editskills/{{ Skills.id }}"
+              >
+                <i class="bi bi-pencil-square"></i>Editar
+              </button>
+            </td>
+  
+            <td *ngIf="isLogged">
+              <button class="btn btn-danger" (click)="delete(Skills.id)">
+                <i class="bi bi-x-square-fill"></i> Borrar</button
+              >
+            </td>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
