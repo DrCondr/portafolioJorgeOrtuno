@@ -15,11 +15,13 @@ h2 {
     text-decoration: underline;
     font-weight: bold;
     padding-top: 25%;
+    text-align: center;
 }
 
 p {
     color: white;
     text-align: center;
+    font-size: 2rem;
 }
 
 img{

@@ -16,8 +16,8 @@
       <ul>
         <li *ngFor="let Conocimientos of conoc">
           <h2>{{ Conocimientos.tituloC }}</h2>
-          <h2>{{ Conocimientos.centroC }}</h2>
-          <h3>{{ Conocimientos.anios }}</h3>
+          <h3>{{ Conocimientos.centroC }}</h3>
+          <h4>{{ Conocimientos.anios }} Año/s</h4>
           <div class="botones">
           <td *ngIf="isLogged">
             <button
@@ -55,7 +55,7 @@
           [showSubtitle]="false"
           [title]="'HTML'"
           [showInnerStroke]="false"
-          [titleColor]="'orange'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'20'"
         ></circle-progress>
         <circle-progress
@@ -70,7 +70,7 @@
           [showSubtitle]="false"
           [title]="'CSS'"
           [showInnerStroke]="false"
-          [titleColor]="'orange'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'20'"
         ></circle-progress>
         <circle-progress
@@ -85,7 +85,7 @@
           [showSubtitle]="false"
           [title]="'JS'"
           [showInnerStroke]="false"
-          [titleColor]="'orange'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'20'"
         ></circle-progress>
         <circle-progress
@@ -100,7 +100,7 @@
           [showSubtitle]="false"
           [title]="'ANGULAR'"
           [showInnerStroke]="false"
-          [titleColor]="'orange'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'20'"
         ></circle-progress>
       </div>
@@ -118,7 +118,7 @@
           [showSubtitle]="false"
           [title]="'Compañerismo'"
           [showInnerStroke]="false"
-          [titleColor]="'lightgreen'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'15'"
         ></circle-progress>
         <circle-progress
@@ -133,7 +133,7 @@
           [showSubtitle]="false"
           [title]="'Ingles'"
           [showInnerStroke]="false"
-          [titleColor]="'lightgreen'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'20'"
         ></circle-progress>
         <circle-progress
@@ -148,10 +148,9 @@
           [showSubtitle]="false"
           [title]="'Sociabilidad'"
           [showInnerStroke]="false"
-          [titleColor]="'lightgreen'"
+          [titleColor]="'tomato'"
           [titleFontSize]="'15'"
         ></circle-progress>
-        <p class="otros">Trabajo en equipo </p>
       </div>
     </div>
   </div>

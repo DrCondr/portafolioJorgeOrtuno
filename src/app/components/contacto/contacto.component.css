@@ -35,6 +35,11 @@
   .detalles-contacto {
     font-size: 2rem;
     text-shadow: 2px 2px 1px #1f1f1f;
+    margin-left: 3%;
+  }
+
+  .detalles-contacto:hover{
+    transform: scale(1.2);
   }
   
   a,p {
